@@ -1,0 +1,21 @@
+[authentication]
+client_identifier="reddit_client_identifier"
+client_secret="reddit_client_secret"
+
+display_username="display_username"
+
+reddit_username="reddit_username"
+reddit_password="reddit_password"
+
+instagram_username="username"
+instagram_password="password"
+
+[elevenlabs]
+elevenlabs_api_key="elevenlabs_api_key"
+elevenlabs_voice="XjLkpWUlnhS8i7gGz3lZ" # "JBFqnCBsd6RMkjVDRZzb"
+
+[scraper]
+subreddits=["AITA", "Confessions", "AmIOverreacting", "AmItheAsshole", "TrueOffMyChest"]
+
+[agent]
+openai_api_key="openai_api_key"
