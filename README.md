@@ -2,7 +2,7 @@
 
 An automated system that creates engaging short-form videos from Reddit posts using AI-generated text-to-speech, video rendering, and social media posting capabilities.
 
-## 🎯 Overview
+## Overview
 
 This project automatically:
 1. **Scrapes** popular posts from Reddit subreddits (AITA, Confessions, etc.)
@@ -11,7 +11,7 @@ This project automatically:
 4. **Renders** professional videos with background footage, titles, and animated subtitles
 5. **Posts** the final videos to Instagram as Reels
 
-## 🚀 Features
+## Features
 
 - **Reddit Integration**: Automatically scrapes trending posts from multiple subreddits
 - **AI Story Enhancement**: Uses OpenAI GPT-4 to transform Reddit posts into engaging narratives
@@ -24,7 +24,7 @@ This project automatically:
 - **Social Media Automation**: Direct Instagram Reels upload with hashtags
 - **Smart Content Selection**: Automatically picks the highest-scoring posts
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 tts-video-generator/
@@ -48,7 +48,7 @@ tts-video-generator/
 └── requirements.txt     # Python dependencies
 ```
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository**
    ```bash
@@ -85,7 +85,7 @@ tts-video-generator/
    openai_api_key="your_openai_api_key"
    ```
 
-## 🔧 Setup Requirements
+## Setup Requirements
 
 ### API Keys Needed:
 - **Reddit API**: Create a Reddit app at [reddit.com/prefs/apps](https://reddit.com/prefs/apps)
@@ -115,7 +115,7 @@ The system will:
 - Generate a thumbnail
 - Upload to Instagram as a Reel
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Subreddits
 Modify the `subreddits` list in `configuration.toml`:
@@ -138,20 +138,20 @@ Customize video rendering in `renderer.py`:
 - Background blur intensity
 - Font sizes and positioning
 
-## 📝 Output
+## Output
 
 The system generates:
 - **Video**: `videos/output.mp4` - Final rendered video
 - **Thumbnail**: `thumbnails/thumbnail.png` - Instagram thumbnail
 - **Audio**: Temporary MP3 files for title and story
 
-## 🔒 Security Notes
+## Security Notes
 
 - **Never commit** your `configuration.toml` file with real API keys
 - Use environment variables for production deployments
 - Consider using Reddit app-only authentication for better security
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues:
 1. **FFmpeg not found**: Ensure FFmpeg is installed and in your PATH
@@ -164,15 +164,10 @@ The system generates:
 - FFmpeg
 - All packages listed in `requirements.txt`
 
-## 📄 License
+## License
 
 This project is for educational and personal use. Please respect Reddit's API terms of service and Instagram's community guidelines.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
-
----
-
-**Author**: Christopher Gholmieh  
-**Version**: 1.0.0
