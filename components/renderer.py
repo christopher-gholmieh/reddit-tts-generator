@@ -93,13 +93,13 @@ class Renderer:
         # Filters:
         background_video = input_video.video
 
-        # Add blur background for non-vertical footage
+        # Blur:
         blurred = background_video.filter("scale", 1080, 1920).filter("boxblur", 10)
         scaled = background_video.filter("scale", "-1", 1920).filter("crop", 1080, 1920)
 
         final_background = ffmpeg.overlay(blurred, scaled, x="(main_w-overlay_w)/2", y="(main_h-overlay_h)/2")
 
-        # Trim and set FPS:
+        # FPS:
         final_background = final_background.filter("fps", fps=30).trim(duration=total_duration).setpts("PTS-STARTPTS")
 
         # Title:
