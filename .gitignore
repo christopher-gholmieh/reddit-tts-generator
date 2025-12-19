@@ -1,2 +1,6 @@
-__venv__
+# Written by: Christopher Gholmieh
+# Cache:
 __pycache__
+
+# Dependencies:
+venv
